@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.17",
+    "lerna": "^3.19.0",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "publish": "lerna run tsc && lerna publish",
+    "clean": "rimraf packages/**/lib",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^6.10.11",
+    "@nestjs/core": "^6.10.11",
+    "@nestjs/platform-express": "^6.10.11",
+    "@nestjs/testing": "^6.10.11",
+    "jest": "^24.9.0"
+  }
+}
