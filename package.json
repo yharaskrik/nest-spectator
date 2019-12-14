@@ -11,7 +11,7 @@
   },
   "scripts": {
     "publish": "lerna run tsc && lerna publish",
-    "clean": "rimraf packages/**/lib",
+    "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map",
     "test": "jest"
   },
   "dependencies": {
