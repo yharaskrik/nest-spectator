@@ -6,7 +6,11 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="https://circleci.com/gh/yharaskrik/nest-spectator">
+    <img alt="Circle Badge" src="https://circleci.com/gh/yharaskrik/nest-spectator.svg?style=svg" />
+  </a>
 </p>
+
 
 > Auto-mocking for Nestjs providers
 
