@@ -15,7 +15,7 @@
     },
     "scripts": {
         "publish": "lerna run tsc && lerna publish",
-        "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map && rimraf",
+        "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map && rimraf coverage && rimraf documentation",
         "test": "jest",
         "gen:readme": "npx readme-md-generator -y && cd packages/nest-spectator && npx readme-md-generator -y",
         "compodoc": "npx compodoc -p packages/nest-spectator/tsconfig.json"
