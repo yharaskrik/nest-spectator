@@ -1,20 +1,27 @@
 {
-  "name": "nest-spectator",
-  "version": "0.0.2",
-  "description": "> TODO: description",
-  "author": "Jay Bell <jay@trellis.org>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "index.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "tsc": "tsc",
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+    "name": "nest-spectator",
+    "version": "0.0.2",
+    "description": "Auto-mocking for Nestjs providers",
+    "author": "Jay Bell <jay@trellis.org>",
+    "homepage": "https://www.npmjs.com/package/nest-spectator",
+    "license": "MIT",
+    "main": "index.ts",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "tsc": "tsc",
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://www.npmjs.com/package/nest-spectator"
+    },
+    "bugs": {
+        "url": "https://github.com/yharaskrik/nest-testing/issues"
+    }
 }

@@ -4,7 +4,8 @@
     "outDir": "./lib"
   },
   "include": [
-    "./index.ts"
+      "./index.ts",
+      "**/*.ts"
   ]
 }
 
