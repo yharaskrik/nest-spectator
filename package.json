@@ -15,9 +15,9 @@
     },
     "scripts": {
         "publish": "lerna run tsc && lerna publish",
-        "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map",
+        "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map && rimraf",
         "test": "jest",
-        "gen:readme": "cd packages/nest-spectator && npx readme-md-generator -y",
+        "gen:readme": "npx readme-md-generator -y && cd packages/nest-spectator && npx readme-md-generator -y",
         "compodoc": "npx compodoc -p packages/nest-spectator/tsconfig.json"
     },
     "dependencies": {
@@ -25,6 +25,7 @@
         "@nestjs/core": "^6.10.11",
         "@nestjs/platform-express": "^6.10.11",
         "@nestjs/testing": "^6.10.11",
-        "jest": "^24.9.0"
+        "jest": "^24.9.0",
+        "reflect-metadata": "^0.1.13"
     }
 }

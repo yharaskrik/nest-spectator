@@ -30,5 +30,6 @@ jobs:
                   key: v1-dependencies-{{ checksum "yarn.lock" }}
 
             # run tests!
+            - run: yarn clean
             - run: yarn test
             - run: yarn lerna run tsc
