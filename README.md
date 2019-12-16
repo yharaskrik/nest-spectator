@@ -22,7 +22,7 @@ See `packages/nest-spectator/__tests__` for reference:
 
 Let's assume you we have the following 2 different Nestjs services:
 
-```
+```typescript
 @Injectable()
 class PrimaryService {
   constructor(secondaryService: SecondaryService) {
@@ -35,7 +35,7 @@ class PrimaryService {
 
 and
 
-```
+```typescript
 @Injectable()
 class SecondaryService {
 }
@@ -43,7 +43,7 @@ class SecondaryService {
 
 and this controller:
 
-```
+```typescript
 @Controller()
 class PrimaryController {
   constructor(primaryService: PrimaryService) {
@@ -53,7 +53,7 @@ class PrimaryController {
 
 Currently we have something like:
 
-```
+```typescript
 import { Test } from '@nestjs/testing';
 import { PrimaryController } from './primary.controller';
 import { PrimaryService } from './primary.service';
@@ -84,7 +84,7 @@ You can see the effect of this in the sample above, `SecondaryService` is inject
 
 If you are wanting to create mocks for each of these services injected in your class being tested then it would look something like this:
 
-```
+```typescript
 import { Test } from '@nestjs/testing';
 import { PrimaryController } from './primary.controller';
 import { PrimaryService } from './primary.service';
@@ -124,7 +124,7 @@ Now you will have to maintain these mock objects for each of your services and e
 This is where `nest-spectator` comes in, inspired by [@ngneat/spectator](https://github.com/ngneat/spectator) for Angular, `nest-spectator` creates a layer on top of the `@nestjs/testing`
 `Test.creatingTestingModule` to provide the functionality to auto mock your services so that your module instantiation in tests turns into:
 
-```
+```typescript
 beforeEach(async () => {
   module = await createTestingModuleFactory(
       {
@@ -143,7 +143,7 @@ that will accept the providers you want to auto mock. This function will return 
 
 If we need access to our services provided to this testing module we get them the same way as we would before since we just have a `TestingModule`.
 
-```
+```typescript
 const primaryService = module.get<PrimaryService>(PrimaryService);
 ```
 

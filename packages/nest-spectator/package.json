@@ -23,5 +23,12 @@
     },
     "bugs": {
         "url": "https://github.com/yharaskrik/nest-testing/issues"
-    }
+    },
+    "keywords": [
+        "nestjs",
+        "nest",
+        "typescript",
+        "testing",
+        "jest"
+    ]
 }
