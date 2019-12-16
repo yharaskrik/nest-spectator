@@ -19,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://www.npmjs.com/package/nest-spectator"
+        "url": "https://github.com/yharaskrik/nest-testing"
     },
     "bugs": {
         "url": "https://github.com/yharaskrik/nest-testing/issues"
