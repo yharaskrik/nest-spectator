@@ -14,7 +14,7 @@
         "typescript": "^3.7.3"
     },
     "scripts": {
-        "publish": "lerna run tsc && lerna publish",
+        "publish": "yarn clean && lerna run tsc && lerna publish",
         "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map && rimraf coverage && rimraf documentation",
         "test": "jest",
         "gen:readme": "npx readme-md-generator -y && cd packages/nest-spectator && npx readme-md-generator -y",
@@ -27,5 +27,6 @@
         "@nestjs/testing": "^6.10.11",
         "jest": "^24.9.0",
         "reflect-metadata": "^0.1.13"
-    }
+    },
+    "version": "0.0.0"
 }

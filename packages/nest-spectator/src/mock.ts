@@ -1,4 +1,6 @@
-/** Credit: Valentin Buryakov */
+/** Credit to: Valentin Buryakov
+ * @ngneat/spectator - https://github.com/ngneat/spectator
+ */
 import {Provider, Type} from "@nestjs/common";
 import {FactoryProvider} from "@nestjs/common/interfaces";
 
