@@ -1,6 +1,6 @@
 {
     "name": "nest-spectator",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Auto-mocking for Nestjs providers",
     "author": "Jay Bell <jay@trellis.org>",
     "homepage": "https://www.npmjs.com/package/nest-spectator",
