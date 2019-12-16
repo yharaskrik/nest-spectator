@@ -154,8 +154,7 @@ This package is still in alpha so there way be unintended side effects or gaps i
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/yharaskrik/nest-testing/issues). You can also take a look at the [contributing guide](https://www.npmjs.com/package/nest-spectator/blob/master/CONTRIBUTING.md).
-
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/yharaskrik/nest-testing/issues).
 ## Show your support
 
 Give a ⭐️ if this project helped you!
