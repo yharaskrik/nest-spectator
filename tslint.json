@@ -1,0 +1,6 @@
+{
+  "extends": "tslint:all",
+  "rulesDirectory": [
+    "codelyzer"
+  ]
+}

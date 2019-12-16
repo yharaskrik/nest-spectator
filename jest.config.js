@@ -1,4 +1,9 @@
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node'
+  testEnvironment: 'node',
+  collectCoverage: true,
+  coverageReporters: ['json', 'html', 'lcov', 'text', 'clover'],
+  collectCoverageFrom: [
+    '**/*.ts'
+  ],
 };

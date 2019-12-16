@@ -1,24 +1,29 @@
 {
-  "name": "root",
-  "private": false,
-  "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.17",
-    "lerna": "^3.19.0",
-    "rimraf": "^3.0.0",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.7.3"
-  },
-  "scripts": {
-    "publish": "lerna run tsc && lerna publish",
-    "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@nestjs/common": "^6.10.11",
-    "@nestjs/core": "^6.10.11",
-    "@nestjs/platform-express": "^6.10.11",
-    "@nestjs/testing": "^6.10.11",
-    "jest": "^24.9.0"
-  }
+    "name": "root",
+    "private": false,
+    "devDependencies": {
+        "@compodoc/compodoc": "^1.1.11",
+        "@types/jest": "^24.0.23",
+        "@types/node": "^12.12.17",
+        "codelyzer": "^5.2.0",
+        "lerna": "^3.19.0",
+        "readme-md-generator": "^1.0.0",
+        "rimraf": "^3.0.0",
+        "ts-jest": "^24.2.0",
+        "tslint": "^5.20.1",
+        "typescript": "^3.7.3"
+    },
+    "scripts": {
+        "publish": "lerna run tsc && lerna publish",
+        "clean": "rimraf packages/**/lib && rimraf packages/**/*.js && rimraf packages/**/*.d.ts && rimraf packages/**/*.js.map",
+        "test": "jest",
+        "generate:readme": "readme-md-generator -y"
+    },
+    "dependencies": {
+        "@nestjs/common": "^6.10.11",
+        "@nestjs/core": "^6.10.11",
+        "@nestjs/platform-express": "^6.10.11",
+        "@nestjs/testing": "^6.10.11",
+        "jest": "^24.9.0"
+    }
 }
