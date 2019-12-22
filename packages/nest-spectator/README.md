@@ -28,7 +28,8 @@ class PrimaryService {
   constructor(secondaryService: SecondaryService) {
   }
 
-  testFunction(): void {
+  testFunction(): string {
+    return 'test';
   }
 }
 ```
@@ -149,6 +150,8 @@ const primaryService = module.get<PrimaryService>(PrimaryService);
 
 If `PrimaryService` was included in the `mocks` array during test module instantiation than it will be an object that mirrors the structure of your class as if it was provided normally except
 that the methods, getters and setters will all be `jest` Spys themselves.
+
+When providing `PrimaryService` in the mocks array and using `module.get<T>(T)` to get the instance of the provider it will return `SpyObject<PrimaryService>` instead of just `PrimaryService`.
 
 This package is still in alpha so there way be unintended side effects or gaps in the logic. If there is anything you would like to see include please feel free to open an issue.
 
