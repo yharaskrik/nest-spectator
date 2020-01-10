@@ -1,5 +1,5 @@
 import {Controller, Injectable} from "@nestjs/common";
-import {createTestingModuleFactory} from "../src/testing-module";
+import {createTestingModuleFactory} from "../src/lib/testing-module";
 import {TestingModule} from "@nestjs/testing/testing-module";
 
 describe('ProviderMock', () => {
